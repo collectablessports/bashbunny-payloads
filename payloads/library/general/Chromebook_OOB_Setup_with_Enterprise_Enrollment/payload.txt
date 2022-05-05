@@ -1,0 +1,95 @@
+# Title: Chromebook Out Of Box Setup with Enteprise Enrollment
+# Description: 
+#	1. Connect Chromebook to Wifi
+#	2. Opt out of sending additional information to Google
+#	3. Enterprise Enrollment
+# Author: unlimit3d
+# Category: General
+# Target: Chromebooks
+
+### Part One: Connect to Wifi ###
+
+ATTACKMODE HID
+
+LED ATTACK
+
+Q ENTER
+Q DELAY 1000
+Q TAB
+Q TAB
+Q TAB
+Q ENTER
+Q DELAY 500
+Q TAB
+Q TAB
+Q TAB
+Q TAB
+Q ENTER
+Q TAB
+Q TAB
+Q TAB
+Q ENTER
+Q DELAY 1000
+Q STRING [SSID]
+Q DELAY 500
+Q TAB
+Q DELAY 200
+Q DOWN
+Q DOWN
+Q DELAY 200
+Q TAB
+Q STRING [PASSWORD]
+Q DELAY 500
+Q ENTER
+Q DELAY 2500
+Q ENTER
+Q DELAY 1000
+Q TAB
+Q DELAY 200
+Q TAB
+Q DELAY 200
+Q ENTER
+
+### Part Two: Opt out of sending Google additional information ###
+
+Q DELAY 9000
+Q TAB
+Q TAB
+Q ENTER
+Q TAB
+Q TAB
+Q TAB
+Q TAB
+Q ENTER
+Q TAB
+Q TAB
+Q ENTER
+Q DELAY 6000
+
+### Part Three optional whether or not enterprise enrollment is needed ### 
+### Part Three: Enterprise Enrollment ###
+
+Q TAB
+Q TAB
+Q TAB
+Q ENTER
+Q DELAY 1500
+Q TAB
+Q TAB
+Q TAB
+Q TAB
+Q TAB
+Q TAB
+Q STRING [EMAIL ADDRESS]
+Q ENTER
+Q DELAY 1800
+Q STRING [PASSWORD]
+Q DELAY 300
+Q ENTER
+
+### Long Pause while device is enrolled. ###
+
+Q DELAY 13000
+Q ENTER
+
+LED FINISH
